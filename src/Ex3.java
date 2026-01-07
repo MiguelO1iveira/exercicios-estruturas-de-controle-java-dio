@@ -49,23 +49,41 @@ public class Ex3 {
 					System.out.println("=== NÚMEROS ÍMPARES ===");
 					for (int i = num2; i >= num1; i--) {
 						
-						if (i % 2 != 0) System.out.printf("%s", i);
-						
-					} // FOR
-					
-				} // CASE 1
+						if (i % 2 != 0) {
+							// CONDIÇÃO PARA COLOCAR PONTO NO FINAL
+							if (num1 % 2!= 0) {
+								if (i == num1) System.out.printf("%s.", i);
+								else System.out.printf("%s, ", i);
+							} else {
+							if (i == num1 + 1) System.out.printf("%s.", i);
+								else System.out.printf("%s, ", i);
+							}
+							// =====================================
+							
+						}//IF ÍMPAR
+					}// FOR
+				}// CASE 1
 				
 				case 2 -> {
 					System.out.println("=== NÚMEROS PARES ===");
 					for (int i = num2; i >= num1; i--) {
 						
-						if (i % 2 == 0) System.out.printf("%s", i);
 						
-					} // FOR
-					
-				} // CASE 1
-				
-			} // SWITCH
+						if (i % 2 == 0) {
+							// CONDIÇÃO PARA COLOCAR PONTO NO FINAL
+							if (num1 % 2 == 0) {
+								if (i == num1) System.out.printf("%s.", i);
+								else System.out.printf("%s, ", i);
+							} else {
+								if (i == num1 + 1) System.out.printf("%s.", i);
+								else System.out.printf("%s, ", i);
+							}
+							// =====================================
+							
+						}// IF PAR
+					}// FOR
+				}// CASE 1
+			}// SWITCH
 			
 			
 			System.out.println("\n\nEncerrando...");
