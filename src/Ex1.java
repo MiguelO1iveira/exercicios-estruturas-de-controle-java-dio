@@ -9,6 +9,7 @@ public class Ex1 {
 			
 			// ENTRADA DE DADOS
 			System.out.println("\nBEM-VINDO!!");
+			System.out.println("=== TABUADA ===");
 			System.out.println("Digite um número para retornar a tabuada: ");
 			System.out.print(">>> ");
 			num = Integer.parseInt(scanner.nextLine());
